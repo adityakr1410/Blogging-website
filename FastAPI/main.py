@@ -1,9 +1,8 @@
 from fastapi import FastAPI, Request
 # from routes.entry import entry_root
-from routes.blog import blog_root
-from routes.user import user_root
-from routes.comment import comment_root
-from fastapi.templating import Jinja2Templates
+from .routes.blog import blog_root
+from .routes.user import user_root
+from .routes.comment import comment_root
 
 
 
