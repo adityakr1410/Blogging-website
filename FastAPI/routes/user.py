@@ -104,3 +104,11 @@ def get_username(_id:str):
     res = user_collection.find_one( {"_id" : ObjectId(_id)} )
 
     return res["username"]
+
+@user_root.get("/username/")
+def get_userID_from_username(username:str):
+
+    res = user_collection.find_one( {"username": username} )
+    return {
+        "user_ID": str(res['_id']) 
+    }
