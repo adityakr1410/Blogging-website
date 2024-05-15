@@ -58,7 +58,7 @@ http://127.0.0.1:8080/docs
 python manage.py runserver
 ```
 
-  
+Django website is still in development
   
 <h2>💻 Built with</h2>
 
